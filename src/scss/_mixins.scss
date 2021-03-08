@@ -1,0 +1,31 @@
+@mixin bg_image($url){
+  background-image: url($url);
+  background-size: cover;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+@mixin align_y(){
+  display: flex;
+  align-items: center;
+}
+@mixin align_x(){
+  display: flex;
+  justify-content: center;
+}
+@mixin align_z(){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin btn(){
+  background-color: $blue;
+  color: #FFFFFF;
+  font-weight: 800;
+  padding: 14px;
+  border-radius: 50px;
+  &:hover{
+    background-color: #FFFFFF;
+    color: $light-blue;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  }
+}
